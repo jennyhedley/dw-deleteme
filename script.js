@@ -12,14 +12,15 @@ var speed = 50;
 
 //function for network error message
 const sent1 = [
-  "Your device is not connected.",
-  "Make sure '[—]' is turned on and in range.",
-  "Now discoverable as '[—]'.",
-  "Connection unsuccessful.",
-  "Your connection is unstable.",
-  "Out of range.",
-  "Unexpected device.",
-  "Bad connection.",
+  "Type what you want.",
+  // "Your device is not connected.",
+  // "Make sure '[—]' is turned on and in range.",
+  // "Now discoverable as '[—]'.",
+  // "Connection unsuccessful.",
+  // "Your connection is unstable.",
+  // "Out of range.",
+  // "Unexpected device.",
+  // "Bad connection.",
 ];
 
 const buttonRetry = document.getElementById("button-network");
@@ -40,8 +41,8 @@ function addEval(evalText) {
 //think about what use you might have for a dropdown menu: you could have someone select their 'mood' and give them an appropriate song, a bit of good or bad advice, an emoji, etc.
 function dropdownFunction() {
   var x = document.getElementById("subject").value;
-  if (x === "flighty") {
-    addEval("🛩️🐦🦅🦋🌪️💭");
+  if (x === "lasagne") {
+    addEval("cheese, pasta, sauce");
   } else if (x === "vague") {
     addEval("🥱👽🐙🪼🌘");
   } else if (x === "joyful") {
