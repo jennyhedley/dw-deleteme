@@ -42,12 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- end of fonts -->
 
     <!-- title of poem as it should appear in browser tab - edit the text-->
@@ -65,7 +59,7 @@
     <div class="column-wide">
       <!-- specifies the width of the card -->
       <div class="cardTitle">
-        <h1>Title of Poem</h1>
+        <h1>New Title</h1>
         <!-- the h1 header tag is inherited from the page's 'body' style specified in the stylesheet - if you want to change the h1 font you can create a new class in the stylesheet similar to the specified h3 and h5 classes -->
         <h5>by Your Name</h5>
         <!-- you can edit the styling of the h5 font in the stylesheet -->
@@ -77,7 +71,7 @@
       <!-- specifies the width of the card-->
       <div class="cardError">
         <h3>Message Alert</h3>
-        <p id="networkError" class="center">Replacement text</p>
+        <p id="networkError" class="center">Not connected.</p>
         <hr />
         <button id="button-network" class="buttonNetwork">Retry</button>
       </div>
@@ -91,7 +85,22 @@
       <!-- formatting and words for phone notes-->
       <div class="columnL">
         <!-- specifies the width of the card-->
-        <div class="cardNotes"></div>
+        <div class="cardNotes">
+          <p>text text</p>
+          <br />
+          <!--inserts a line break -->
+          <p>write something</p>
+          <br />
+          <p>write something</p>
+          <br />
+          <p>🧩🤾🤿🌄🌠💎🧿🪅❗🏴‍☠️</p>
+          <br />
+          <p>
+            <img
+              src="https://cdn.glitch.global/8789d4c5-b724-48c7-931f-f33ca033f9dd/swift.gif?v=1705898133961"
+            />
+          </p>
+        </div>
       </div>
 
       <!-- formatting and words for text message exchanges-->
@@ -99,9 +108,7 @@
         <!-- specifies the width of the card-->
         <div class="cardText">
           <p class="bubble">hey</p>
-                    <p class="bubble bubble--alt">new phone who dis</p>
           <p class="bubble">hey</p>
-                    <p class="bubble bubble--alt">new phone who dis</p>
           <p class="bubble">sup</p>
           <p class="bubble bubble--alt">new phone who dis</p>
           <p class="bubble">...</p>
@@ -114,13 +121,13 @@
         <div class="cardDropdown">
           <!-- edit the cardDropdown class in style.css to change the look -->
           <!-- title of dropdown poem -- edit the title and the option values, making sure the option values then match up with those in the dropdownFunction in the script.js file-->
-          <h2>New title</h2>
+          <h2>Moods got me like</h2>
           <br />
           <select id="subject" class="text-box" onchange="dropdownFunction()">
-            <option value="">Dinner recipes</option>
-            <option value="lasagne">lasagne</option>
-            <option value="vague">tacos</option>
-            <option value="joyful">salad</option>
+            <option value="">Select a feeling</option>
+            <option value="flighty">flighty</option>
+            <option value="vague">vague</option>
+            <option value="joyful">joyful</option>
             <option value="cloudy">cloudy</option>
             <option value="hangry">hangry</option>
           </select>
@@ -181,12 +188,7 @@
       <div class="columnXl">
         <!-- specifies the width of the card -->
         <div class="cardPoem">
-          <p>
-            Dystopian dreams (after Nick Monfort's
-            <a href="https://nickm.com/taroko_gorge/original.html"
-              >Taroko Gorge</a
-            >)
-          </p>
+          <p>Dystopian dreams (after Nick Monfort's <a href="https://nickm.com/taroko_gorge/original.html">Taroko Gorge</a>)</p>
           <hr />
           <div id="poem" style="text-align: right"></div>
         </div>
