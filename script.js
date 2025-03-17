@@ -58,14 +58,9 @@ function dropdownFunction() {
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
   "jon you are my pet",
-  "garfield was in the oven",
-  "pizza is a dream",
-  "hand over the cheese",
-  "parmesean is life",
-  "i am so hungry",
-  "where did odie go",
-  "get it your damn self",
-  "obey me human",
+"something here",
+  "another thing",
+  
 ];
 const sevenSyllables = [
   "cheese makes everything better",
@@ -220,4 +215,4 @@ function processPoem() {
     removeFirstLine();
   }
 }
-window.setInterval(processPoem, 1000);
+window.setInterval(processPoem, 5000);
