@@ -24,11 +24,12 @@ const sent1 = [
 
 const buttonRetry = document.getElementById("button-network");
 
+// Function to handle the button click and update the text
 function changeResultsError() {
   const paragraph = document.getElementById("networkError");
   paragraph.innerText = getRandomFromList(sent1);
 }
-buttonRetry.addEventListener("click", changeResultsError);
+
 //end of network error function
 
 //function dropdown menu (do not edit this first part)
@@ -96,7 +97,6 @@ function changeResults() {
   paragraphEight.innerText = getRandomFromList(sevenSyllables);
   paragraphNine.innerText = getRandomFromList(fiveSyllables);
 }
-buttonHaiku.addEventListener("click", changeResults);
 //end of haiku function
 
 //start of search function
