@@ -32,24 +32,24 @@ buttonRetry.addEventListener("click", changeResultsError);
 //end of network error function
 
 //function dropdown menu (do not edit this first part)
-function addEval(evalText) {
+function addText(content) {
   const subjectContent = document.getElementById("subject-content");
-  subjectContent.innerText = evalText;
+  subjectContent.innerText = content;
 }
 //when selected in the dropdown menu, the x variables trigger the associated text. Edit the x variables (and make sure to also update them in the index.html file) and edit the associated text/emojis within the quotes
 //think about what use you might have for a dropdown menu: you could have someone select their 'mood' and give them an appropriate song, a bit of good or bad advice, an emoji, etc.
 function dropdownFunction() {
   var x = document.getElementById("subject").value;
   if (x === "flighty") {
-    addEval("🛩️🐦🦅🦋🌪️💭");
+    addText("🛩️🐦🦅🦋🌪️💭");
   } else if (x === "vague") {
-    addEval("🥱👽🐙🪼🌘");
+    addText("🥱👽🐙🪼🌘");
   } else if (x === "joyful") {
-    addEval("😀😍😸👾👻🕺");
+    addText("😀😍😸👾👻🕺");
   } else if (x === "cloudy") {
-    addEval("🌦️🌨️🫧🌫️☔⚡🥶");
+    addText("🌦️🌨️🫧🌫️☔⚡🥶");
   } else if (x === "hangry") {
-    addEval("🍟🥨🌮🥗🍱");
+    addText("🍟🥨🌮🥗🍱");
   }
 }
 //end of dropdown function
@@ -58,9 +58,14 @@ function dropdownFunction() {
 //lists of variables: replace all of the 5 and 7 syllable constants in the two arrays below. The more constants you write, the more variety you will have in your poem
 const fiveSyllables = [
   "jon you are my pet",
-"something here",
-  "another thing",
-  
+  "garfield was in the oven",
+  "pizza is a dream",
+  "hand over the cheese",
+  "parmesean is life",
+  "i am so hungry",
+  "where did odie go",
+  "get it your damn self",
+  "obey me human",
 ];
 const sevenSyllables = [
   "cheese makes everything better",
@@ -215,4 +220,4 @@ function processPoem() {
     removeFirstLine();
   }
 }
-window.setInterval(processPoem, 5000);
+window.setInterval(processPoem, 1000);
